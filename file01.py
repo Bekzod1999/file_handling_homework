@@ -7,9 +7,11 @@ def main(data:str):
         list: return answer
     """
     k = []
+    i = []
     for listt in data:
         if listt != ',':
-            k += listt
+            listt = int(listt)
+            k.append(listt)
     return k
 # Read data from file
 
