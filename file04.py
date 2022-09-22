@@ -7,9 +7,11 @@ def main(data:str):
         list: return answer
     """
     k = []
-    for strr in data:
-        if strr.isalpha():
-            k += strr
+    for line in data:
+        if line.isalpha():
+            k += line
+        elif line == '\n':
+            k += '\n'
     return k
     
 # Read data from file
