@@ -6,8 +6,11 @@ def main(data:str):
     Returns:
         list: return answer
     """
-    
-    return data.split(',')
+    k = []
+    for listt in data:
+        if listt != ',':
+            k += listt
+    return k
 # Read data from file
 
 f = open('txt_file/data01.txt').read()
